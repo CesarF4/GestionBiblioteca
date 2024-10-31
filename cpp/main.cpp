@@ -178,7 +178,7 @@ int main() {
                 //Lector = obtenemos el lector segun el nombre y dni
                 
                 Lector lector(nombre, dni);
-                for (auto& solicitud : biblioteca.getSolicitudes()) { // Asegúrate que getSolicitudes() devuelva una referencia a la lista de solicitudes
+                for (auto& solicitud : biblioteca.getSolicitudes()) {
                     if (solicitud.getNombre() == nombre && solicitud.getDni() == dni) {
                         lector_encontrado = true;
                         lector = solicitud;
