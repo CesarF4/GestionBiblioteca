@@ -155,7 +155,7 @@ def quicksort_libros(head):
         return pivot
 
 
-# Input con checkeo de errores (int)
+#input con checkeo de errores (int)
 def input_int(mensaje, permitir_negativo):
     while True:
         try:
@@ -169,7 +169,7 @@ def input_int(mensaje, permitir_negativo):
             print("Error al procesar el valor ingresado.")
             continue
 
-# Input con checkeo de errores (isbn)
+#input con checkeo de errores (isbn)
 def input_isbn(mensaje):
     while True:
         try:
@@ -206,8 +206,7 @@ def limitar_pila(pila_biblioteca, pila_acciones, limite):
     if len(pila_acciones) > limite:
         for i in range(len(pila_acciones) - limite):
             del pila_acciones[0]
-
-#978-84-1234-856-7
+            
 def main():
     pila_biblioteca = []
     pila_acciones = []
